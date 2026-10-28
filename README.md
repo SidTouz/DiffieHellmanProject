@@ -1,0 +1,3 @@
+Dependencies
+
+- pycryptodome-4.2.0
