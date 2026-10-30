@@ -27,13 +27,13 @@ This option will display successful exchanges between Alice and Bob for 16, 24, 
 # Report
 Finite-field Diffie-Hellman is similar to elliptic-curve Diffie-Hellman (ECDH) in some ways, but there are a few important differences to discuss. First of all is the underlying core operations: modular exponentiation versus elliptic curve scalar multiplication. 
 Finite field modular exponentiation refers to the process of raising some $g$ to the power $p$ modulo $n$, ie,
-    ```math
+    $$
         g^p\pmod{n}
-    ```
+    $$
     Elliptic curve scalar multiplication, on the other hand, refers to the process of adding a point $G=(x,y)$ on the elliptic curve to itself $p$ times using point addition, ie,
-    ```math
+    $$
     p\cdot G = G + G + ... + G
-    ```
+    $$$
     
 Our implementation of Diffie-Hellman uses primes between 16 and 32 bits because of the speed at which they can be calculated is much faster than what would be needed for a real-world secure system. They work well for demonstrating the underlying concept quickly. 
     
